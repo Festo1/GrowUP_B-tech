@@ -504,14 +504,14 @@ button i {
 }
 
 .headings h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 400;
   color: var(--second-color);
 }
 
 .services_container {
   gap: 5px;
-  width: 110%;
+  width: 100%;
   display: flex;
   margin-top: 20px;
   flex-direction: column;
@@ -534,16 +534,24 @@ button i {
 
 .service_info {
   gap: 20px;
-  width: 70%;
+  width: 100%;
   display: flex;
   align-items: center;
 }
 
+.service_info h2 {
+  font-size: 1rem;
+}
+
+.service_info h1 {
+  font-size: 1.1rem;
+}
+
 .service_arrow {
-  width: 100px;
-  height: 50px;
+  width:120px;
+  height: 80px;
   display: flex;
-  font-size: 2.5rem;
+  font-size: 3rem;
   transition: .3s;
   align-items: center;
   border-radius: 100%;
@@ -563,7 +571,7 @@ button i {
   top: 20%;
   left: 48%;
   width: 38%;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.8rem;
   font-weight: 400;
   color: var(--p-color);
@@ -588,3 +596,7 @@ button i {
   background-color: var(--primary-color);
   color: var(--second-color);
 }
+
+/* PORTFOLIO SECTION */
+
+.portfolio {}

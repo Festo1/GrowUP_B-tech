@@ -606,7 +606,7 @@ button i {
   background-image: url(Images/portfolio-business-bg1.png);
 }
 
-.portfolio_slider {
+.portfolio_swiper {
   margin-top: 50px;
   width: 100%;
 }
@@ -614,7 +614,54 @@ button i {
 .slide_img {
   width: 100%;
   display: flex;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.client_det {
+  gap: 5px;
+  width: 90%;
+  height: 100px;
+  display: flex;
+  position:absolute;
+  top: 100%;
+  left: 5%;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F3DABA;
+  transition: .6s;
+}
+
+.client_det p {
+  color: var(--second-color);
+  font-weight: 400;
+  transition: .3s;
+}
+
+.client_det h2 {
+  color: var(--second-color);
+  font-weight: 600;
+  transition: .3s;
+}
+
+.slide_img:hover .client_det {
+  top: 70%;
+
+}
+
+.client_det:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+  background-color: var(--second-color);
+}
+
+.client_det:hover h2,
+.client_det:hover p {
+  color: var(--primary-color);
 }

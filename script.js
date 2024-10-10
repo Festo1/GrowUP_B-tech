@@ -1,3 +1,27 @@
+// SWIPER SLIDER
+var swiper = new Swiper(".portfolio_swiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: true,
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    900: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    500: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+  },
+
+});
+
+
 // Description: This file contains the JavaScript code for the website.
 document.addEventListener("DOMContentLoaded", function () {
   const video = document.getElementById("introVideo");
@@ -113,30 +137,4 @@ document.addEventListener("DOMContentLoaded", function () {
   }, options);
 
   observer.observe(counterSection);
-});
-
-// SWIPER SLIDER
-
-var swiper = new Swiper(".portfolio_swiper", {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  loop: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 40,
-    },
-  },
 });

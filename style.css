@@ -776,14 +776,137 @@ button i {
 
 /* TESTIMONIALS */
 
-.testimonials {
-  margin-top: 50px;
+.testimonial {
   display: flex;
+  margin-top: 50px;
   flex-direction: column;
 }
 
-.testimonial_swiper {
+.testimonialSwiper {
   width: 100%;
   margin-top: 50px;
+}
 
+.test-wrapper {
+  width: 76vw !important;
+}
+
+.testimonial_slide {
+  width: 100%;
+  display: flex;
+  padding: 2%;
+  gap: 20px;
+  align-items: start;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: .3s;
+}
+
+.testimonial_slide:hover {
+  border-color: var(--primary-color);
+}
+
+.test_head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.test_head img {
+  width: 120px;
+  height: 20px;
+}
+
+.test_head h2 {
+  font-weight: 500;
+  transition: .3s;
+}
+
+.test_head h2:hover {
+  color: var(--second-color);
+  cursor: pointer;
+}
+
+.testimonial_slide p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--p-color)
+}
+
+.test_details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.test_info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.test_img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.test_img img {
+  object-fit: cover;
+}
+
+.quote_img {
+  width: 50px;
+  height: 50px;
+}
+
+.test_name {
+  display: flex;
+  gap: 1px;
+  flex-direction: column;
+}
+
+.test_name h2 {
+  font-weight: 500;
+}
+
+.test_name p {
+  font-weight: 400;
+}
+
+/* BRANDS SECTION */
+
+.brandSwiper {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.brand_img {
+  width: 100%;
+  height: 100px;
+  background-color: #f5f3ef57;
+  padding: 15%;
+  border-radius: 15px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.brand_img img {
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Adding transition for image zoom and color effect */
+}
+
+.brand_img:hover {
+  transform: scale(1.1); /* Zoom in effect */
+  cursor: pointer;
+  background-color: var(--second-color);
+}
+
+.brand_img:hover img {
+  transform: scale(1.05); /* Slight zoom for the image */
+  filter: sepia(100%) saturate(500%) hue-rotate(15deg) brightness(1.2);
+  /* Filter to create a bright golden effect */
 }

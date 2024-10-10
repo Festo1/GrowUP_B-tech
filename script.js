@@ -167,3 +167,51 @@ document.addEventListener("DOMContentLoaded", function () {
 
   observer.observe(counterSection);
 });
+
+//  TESTIMONIALS SLIDER
+
+var swiper = new Swiper(".testimonialSwiper", {
+  slidesPerView: 2,
+  spaceBetween: 10,
+  loop: true,
+  autoplay: true,
+  breakpoints: {
+    1200: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    900: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    500: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+  },
+
+});
+
+//  BRANDS SLIDER
+
+var swiper = new Swiper(".brandSwiper", {
+  slidesPerView: 5,
+  spaceBetween: 10,
+  loop: true,
+  autoplay: true,
+  breakpoints: {
+    1200: {
+      slidesPerView: 5,
+      spaceBetween: 20,
+    },
+    900: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    500: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+  },
+
+});

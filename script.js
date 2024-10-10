@@ -21,6 +21,35 @@ var swiper = new Swiper(".portfolio_swiper", {
 
 });
 
+// FAQS SECTION
+
+let Quest = document.querySelectorAll(".question");
+let para = document.querySelectorAll(".faq-para");
+let QnsHead = document.querySelectorAll(".qns_icon");
+
+Quest.forEach((drop, index) => {
+  drop.addEventListener("click", () => {
+    const answer = drop.lastElementChild;
+
+    // Check if the clicked answer is already shown
+    const isVisible = answer.classList.contains("showQuestion");
+
+    // Remove the classes from all elements
+    para.forEach(paragraph => {
+      paragraph.classList.remove("showQuestion");
+    });
+    QnsHead.forEach(icon => {
+      icon.classList.remove("active_ans");
+    });
+
+    // Toggle the visibility of the clicked answer
+    if (!isVisible) {
+      answer.classList.add("showQuestion");
+      QnsHead[index].classList.add("active_ans");
+    }
+  });
+});
+
 
 // Description: This file contains the JavaScript code for the website.
 document.addEventListener("DOMContentLoaded", function () {

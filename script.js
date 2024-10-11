@@ -215,3 +215,36 @@ var swiper = new Swiper(".brandSwiper", {
   },
 
 });
+
+// BLOG SLIDER
+
+var swiper = new Swiper(".blogSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: true,
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    900: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    500: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+  },
+
+});
+
+// MENU TOGGLE
+
+let bar = document.querySelector(".bars");
+let menu = document.querySelector(".menu");
+
+bar.addEventListener("click", () => {
+  menu.classList.toggle("show_menu");
+});

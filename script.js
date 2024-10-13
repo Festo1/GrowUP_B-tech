@@ -174,7 +174,10 @@ var swiper = new Swiper(".testimonialSwiper", {
   slidesPerView: 2,
   spaceBetween: 10,
   loop: true,
-  autoplay: true,
+  autoplay: {
+    delay: 5000, // Delay in milliseconds (5 seconds)
+    disableOnInteraction: false, // To keep autoplay running even when user interacts with slides
+  },
   breakpoints: {
     1200: {
       slidesPerView: 2,
@@ -189,7 +192,6 @@ var swiper = new Swiper(".testimonialSwiper", {
       spaceBetween: 10,
     },
   },
-
 });
 
 //  BRANDS SLIDER
